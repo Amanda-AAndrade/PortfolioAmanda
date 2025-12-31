@@ -1,109 +1,381 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio | Amanda Andrade</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Amanda Andrade</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-    <header>
-        <h1>Amanda Andrade</h1>
-        <p> Estudante de ADS | Em transição para Desenvolvimento Back-End (Banco de Dados) | Suporte Técnico em TI | </p>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Estou em transição de carreira para a área de tecnologia, com foco em Desenvolvimento Back-End / TI / Suporte. 
-        Atualmente, curso Análise e Desenvolvimento de Sistemas e venho aprimorando minhas habilidades em HTML, CSS, JavaScript, API, Algoritmos, SQLite.</p>
-    </section>   
-    
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="projeto">
-            <h3>Qzverso</h3>
-            <p>Plataforma para publicação de histórias inspirada no Wattpad e Netflix.</p>
-            <a href="https://github.com/Qzverso" target="_blank">Ver no GitHub</a>
-        </div>
-        <div class="projeto">
-            <h3>Currículo HTML</h3>
-            <p>Currículo criado em HTML e CSS como demonstração de habilidades.</p>
-            <a href="https://github.com/Amanda-AAndrade/MeuCurriculoHTML" target="_blank">Ver no GitHub</a>
-        </div>
-    </section>
-    
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Você pode me encontrar no LinkedIn e GitHub:</p>
-        <ul>
-            <li><a href="https://linkedin.com/in/amanda-andradetec" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/Amanda-AAndrade" target="_blank">GitHub</a></li>
-            
-        </ul>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Amanda Andrade - Todos os direitos reservados.</p>
-    </footer>
 
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #fff;
-            text-align: center;
-        }
-        header {
-            background: #1e1e1e;
-            padding: 20px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav a {
-            color: #ff9800;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px;
-        }
-        .projeto {
-            background: #333;
-            padding: 20px;
-            margin: 20px auto;
-            width: 80%;
-            border-radius: 10px;
-        }
-        .projeto a {
-            display: inline-block;
-            margin-top: 10px;
-            color: #ff9800;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer {
-            background: #1e1e1e;
-            padding: 10px;
-            font-size: 14px;
-        }
-    </style>
+<body>
+
+  <!-- Header / Menu -->
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>Amanda Andrade</span>
+      </div>
+
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#formacao">Formação</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section id="inicio">
+      <div class="hero">
+
+        <div>
+          <div class="badge">📍 <span>São Paulo</span> • Remoto/Híbrido/Presencial</div>
+
+          <h1>Amanda Andrade</h1>
+          <h2>Desenvolvedora Back-end em formação</h2>
+
+          <p>
+            Estudante de Análise e Desenvolvimento de Sistemas (conclusão 06/2026),
+            em transição de carreira para a área de tecnologia, com foco em
+            desenvolvimento web e back-end.
+          </p>
+
+          <div class="botoes">
+            <a class="btn primary" href="#projetos">Ver projetos</a>
+            <a class="btn" href="AMANDA_ANDRADE_Currículo.pdf" target="_blank" rel="noopener">
+              Baixar currículo
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h3>Foco atual</h3>
+          <p>Estágio em TI • Desenvolvimento Web • Suporte</p>
+
+          <div class="hero-meta">
+            <div class="meta-line">✅ <span>Tickets • Suporte • Análise</span></div>
+            <div class="meta-line">🧠 <span>HTML • CSS • JS • Node • SQL</span></div>
+            <div class="meta-pill">Disponibilidade: integral/parcial</div>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+
+      <p>
+        Sou estudante de Análise e Desenvolvimento de Sistemas e Engenharia de Software,
+        com experiência sólida em suporte técnico, atendimento ao cliente e resolução
+        de problemas em ambientes de alta demanda.
+      </p>
+
+      <p>
+        Atuei por anos em áreas que exigem atenção a detalhes, confiabilidade de dados
+        e tomada de decisão rápida, especialmente em contextos críticos como saúde e
+        tecnologia.
+      </p>
+
+      <p>
+        Atualmente, aplico meus estudos em desenvolvimento web e back-end utilizando
+        HTML, CSS, JavaScript, Node.js, APIs REST e bancos de dados relacionais,
+        desenvolvendo projetos práticos e versionados com Git/GitHub.
+      </p>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades">
+      <h2>Habilidades técnicas</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Linguagens</h3>
+          <p>HTML, CSS, JavaScript (Node.js)</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JS</span>
+            <span class="tag">Node</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Back-end</h3>
+          <p>APIs REST, CRUD, lógica de programação</p>
+          <div class="tags">
+            <span class="tag">API</span>
+            <span class="tag">CRUD</span>
+            <span class="tag">REST</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Banco de dados</h3>
+          <p>MySQL, PostgreSQL (básico)</p>
+          <div class="tags">
+            <span class="tag">MySQL</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Relacional</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Ferramentas</h3>
+          <p>Git, GitHub, VSCode, Figma</p>
+          <div class="tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VSCode</span>
+            <span class="tag">Figma</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Qualidade / Processos</h3>
+          <p>Testes, validações, análise de falhas, documentação</p>
+          <div class="tags">
+            <span class="tag">Validação</span>
+            <span class="tag">Testes</span>
+            <span class="tag">Documentação</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Experiência em suporte</h3>
+          <p>Atendimento técnico, gestão de tickets, melhoria contínua</p>
+          <div class="tags">
+            <span class="tag">Suporte</span>
+            <span class="tag">Tickets</span>
+            <span class="tag">SLA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formação -->
+    <section id="formacao">
+      <h2>Formação</h2>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Análise e Desenvolvimento de Sistemas (ADS)</h3>
+          <p>Descomplica • Cursando • Conclusão prevista: 06/2026</p>
+          <div class="tags">
+            <span class="tag">Tecnólogo</span>
+            <span class="tag">Em andamento</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Engenharia de Software</h3>
+          <p>Descomplica • Início: 01/2026 • Previsão: 12/2028</p>
+          <div class="tags">
+            <span class="tag">Graduação</span>
+            <span class="tag">Início em breve</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Administração</h3>
+          <p>ETEC Prof. Aprígio Gonzaga • Conclusão: 06/2014</p>
+          <div class="tags">
+            <span class="tag">Tecnólogo</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Farmácia</h3>
+          <p>UNIP • Graduação incompleta</p>
+          <div class="tags">
+            <span class="tag">Incompleto</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experiência -->
+    <section id="experiencia">
+      <h2>Experiência profissional</h2>
+
+      <div class="grid">
+
+        <article class="card">
+          <h3>Assistente de Operações I (temporário)</h3>
+          <p>KPMG | fev/2025 – jun/2025</p>
+          <ul>
+            <li>Híbrido: 1 dia presencial, 4 dias home office.</li>
+            <li>Formatação de documentos no KPDS Express.</li>
+            <li>Adobe Acrobat, Word e Excel para padronização de entregas.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Analista de Atendimento ao Cliente Pleno</h3>
+          <p>Clínica Nas Nuvens – Bionexo | 2022–2024</p>
+          <ul>
+            <li>100% home office.</li>
+            <li>Suporte técnico e resolução de problemas em sistemas.</li>
+            <li>Gestão e priorização de tickets.</li>
+            <li>Análise de falhas, testes e sugestões de melhorias.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Assistente de Farmácia Hospitalar</h3>
+          <p>Hospital São Camilo | 2021–2022</p>
+          <ul>
+            <li>Atuação em ambientes críticos (UTI).</li>
+            <li>Conferência de dados e prevenção de erros.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Auxiliar de Conferência Farmacêutica</h3>
+          <p>Laboratório Buenos Ayres | 2014–2020</p>
+          <ul>
+            <li>Pesagem e manipulação de medicamentos.</li>
+            <li>Conferência de prescrições médicas e rotulagem de embalagens.</li>
+            <li>Validação de requisitos, conformidade e padronização de processos.</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos">
+      <h2>Projetos</h2>
+
+      <div class="grid">
+
+        <article class="card">
+          <h3>Qzverso – Plataforma de Publicação de Histórias</h3>
+          <p>
+            Inspirado no Wattpad, desenvolvido com HTML, CSS e JavaScript.
+            Estrutura inicial para futuras integrações com APIs e banco de dados.
+          </p>
+
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+
+          <div class="card-links">
+            <a href="https://github.com/Qzverso/Qzverso" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Currículo em HTML/CSS</h3>
+          <p>Currículo responsivo desenvolvido com HTML e CSS puro.</p>
+
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Responsivo</span>
+          </div>
+
+          <div class="card-links">
+            <a href="https://github.com/Amanda-AAndrade/MeuCurriculoHTML.git" target="_blank" rel="noopener">
+              Ver projeto
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Projeto de Extensão – Aprenda Fácil</h3>
+          <p>Projeto acadêmico em HTML e CSS com foco em educação acessível.</p>
+
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">PEX</span>
+          </div>
+
+          <div class="card-links">
+            <a href="https://amanda-aandrade.github.io/aprenda-facil-pex/" target="_blank" rel="noopener">
+              Acessar site
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Portfólio – Amanda Andrade</h3>
+          <p>Portfólio com foco em design e desenvolvimento web.</p>
+
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+
+          <div class="card-links">
+            <a href="https://amanda-aandrade.github.io/PortfolioAmanda/" target="_blank" rel="noopener">
+              Acessar
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+
+      <div class="contact-box">
+        <div class="contact-item">
+          <h3>Email</h3>
+          <p>
+            <a href="mailto:amanda.andradetec@gmail.com">amanda.andradetec@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <h3>GitHub</h3>
+          <p>
+            <a href="https://github.com/Amanda-AAndrade" target="_blank" rel="noopener">
+              github.com/Amanda-AAndrade
+            </a>
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <h3>LinkedIn</h3>
+          <p>
+            <a href="#" target="_blank" rel="noopener">linkedin.com/in/seu-link</a>
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <h3>Currículo (PDF)</h3>
+          <p>
+            <a href="AMANDA_ANDRADE_Currículo.pdf" target="_blank" rel="noopener">Baixar</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-inner">
+      <span>© 2025 — Amanda Andrade</span>
+      <span>Feito com HTML • CSS • JS</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
