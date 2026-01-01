@@ -8,7 +8,6 @@
 </head>
 
 <body>
-
   <!-- Header / Menu -->
   <header>
     <div class="header-inner">
@@ -17,28 +16,26 @@
         <span>Amanda Andrade</span>
       </div>
 
-      <div style="display: flex; gap: 12px; align-items: center;">
-  <nav class="nav">
-    <a href="#inicio">Início</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#habilidades">Habilidades</a>
-    <a href="#formacao">Formação</a>
-    <a href="#experiencia">Experiência</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#contato">Contato</a>
-  </nav>
+      <div class="header-actions">
+        <nav class="nav">
+          <a href="#inicio">Início</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#formacao">Formação</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
 
-  <button id="themeToggle" class="btn">🌙</button>
-</div>
-
+        <button id="themeToggle" class="btn" type="button" aria-label="Alternar tema">🌙</button>
+      </div>
+    </div>
   </header>
 
   <main>
-
     <!-- Hero -->
     <section id="inicio">
       <div class="hero">
-
         <div>
           <div class="badge">📍 <span>São Paulo</span> • Remoto/Híbrido/Presencial</div>
 
@@ -53,7 +50,7 @@
 
           <div class="botoes">
             <a class="btn primary" href="#projetos">Ver projetos</a>
-            <a class="btn" href="AMANDA_ANDRADE_Currículo.pdf" target="_blank" rel="noopener">
+            <a class="btn" href="assets/files/AMANDA_ANDRADE_Curriculo.pdf" target="_blank" rel="noopener" download>
               Baixar currículo
             </a>
           </div>
@@ -69,7 +66,6 @@
             <div class="meta-pill">Disponibilidade: integral/parcial</div>
           </div>
         </aside>
-
       </div>
     </section>
 
@@ -116,9 +112,9 @@
           <h3>Back-end</h3>
           <p>APIs REST, CRUD, lógica de programação</p>
           <div class="tags">
-            <span class="tag">API</span>
-            <span class="tag">CRUD</span>
             <span class="tag">REST</span>
+            <span class="tag">CRUD</span>
+            <span class="tag">API</span>
           </div>
         </div>
 
@@ -128,7 +124,7 @@
           <div class="tags">
             <span class="tag">MySQL</span>
             <span class="tag">PostgreSQL</span>
-            <span class="tag">Relacional</span>
+            <span class="tag">SQL</span>
           </div>
         </div>
 
@@ -144,18 +140,18 @@
         </div>
 
         <div class="card">
-          <h3>Qualidade / Processos</h3>
+          <h3>Qualidade</h3>
           <p>Testes, validações, análise de falhas, documentação</p>
           <div class="tags">
-            <span class="tag">Validação</span>
             <span class="tag">Testes</span>
+            <span class="tag">Validação</span>
             <span class="tag">Documentação</span>
           </div>
         </div>
 
         <div class="card">
-          <h3>Experiência em suporte</h3>
-          <p>Atendimento técnico, gestão de tickets, melhoria contínua</p>
+          <h3>Suporte</h3>
+          <p>Atendimento técnico, tickets, melhoria contínua</p>
           <div class="tags">
             <span class="tag">Suporte</span>
             <span class="tag">Tickets</span>
@@ -181,7 +177,7 @@
 
         <article class="card">
           <h3>Engenharia de Software</h3>
-          <p>Descomplica • Início: 01/2026 • Previsão: 12/2028</p>
+          <p>Descomplica • Início: 01/2026 • Previsão: 06/2028</p>
           <div class="tags">
             <span class="tag">Graduação</span>
             <span class="tag">Início em breve</span>
@@ -211,7 +207,6 @@
       <h2>Experiência profissional</h2>
 
       <div class="grid">
-
         <article class="card">
           <h3>Assistente de Operações I (temporário)</h3>
           <p>KPMG | fev/2025 – jun/2025</p>
@@ -247,11 +242,10 @@
           <p>Laboratório Buenos Ayres | 2014–2020</p>
           <ul>
             <li>Pesagem e manipulação de medicamentos.</li>
-            <li>Conferência de prescrições médicas e rotulagem de embalagens.</li>
-            <li>Validação de requisitos, conformidade e padronização de processos.</li>
+            <li>Conferência de prescrições e rotulagem.</li>
+            <li>Conformidade e padronização de processos.</li>
           </ul>
         </article>
-
       </div>
     </section>
 
@@ -260,59 +254,50 @@
       <h2>Projetos</h2>
 
       <div class="grid">
-
-        <article class="card">
+        <article class="card project-card" data-project="qzverso">
           <h3>Qzverso – Plataforma de Publicação de Histórias</h3>
-          <p>
-            Inspirado no Wattpad, desenvolvido com HTML, CSS e JavaScript.
-            Estrutura inicial para futuras integrações com APIs e banco de dados.
-          </p>
-
+          <p>Inspirado no Wattpad, desenvolvido com HTML, CSS e JavaScript.</p>
           <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
           </div>
-
           <div class="card-links">
             <a href="https://github.com/Qzverso/Qzverso" target="_blank" rel="noopener">GitHub</a>
           </div>
         </article>
 
-        <article class="card">
+        <article class="card project-card" data-project="curriculo-html">
+          <h3>Currículo em HTML/CSS</h3>
+          <p>Currículo responsivo feito com HTML e CSS puro.</p>
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Responsivo</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/Amanda-AAndrade/MeuCurriculoHTML.git" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="card project-card" data-project="aprenda-facil">
           <h3>Projeto de Extensão – Aprenda Fácil</h3>
           <p>Projeto acadêmico em HTML e CSS com foco em educação acessível.</p>
-
           <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">PEX</span>
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">PEX</span>
           </div>
-
           <div class="card-links">
-            <a href="https://amanda-aandrade.github.io/aprenda-facil-pex/" target="_blank" rel="noopener">
-              Acessar site
-            </a>
+            <a href="https://amanda-aandrade.github.io/aprenda-facil-pex/" target="_blank" rel="noopener">Site</a>
+            <a href="https://github.com/Amanda-AAndrade/aprenda-facil-pex" target="_blank" rel="noopener">GitHub</a>
           </div>
         </article>
 
-        <article class="card">
+        <article class="card project-card" data-project="portfolio">
           <h3>Portfólio – Amanda Andrade</h3>
-          <p>Portfólio com foco em design e desenvolvimento web.</p>
-
+          <p>Portfólio profissional feito com HTML, CSS e JavaScript.</p>
           <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
           </div>
-
           <div class="card-links">
-            <a href="https://amanda-aandrade.github.io/PortfolioAmanda/" target="_blank" rel="noopener">
-              Acessar
-            </a>
+            <a href="https://amanda-aandrade.github.io/PortfolioAmanda/" target="_blank" rel="noopener">Acessar</a>
           </div>
         </article>
-
       </div>
     </section>
 
@@ -323,36 +308,55 @@
       <div class="contact-box">
         <div class="contact-item">
           <h3>Email</h3>
-          <p>
-            <a href="mailto:amanda.andradetec@gmail.com">amanda.andradetec@gmail.com</a>
-          </p>
+          <p><a href="mailto:amanda.andradetec@gmail.com">amanda.andradetec@gmail.com</a></p>
         </div>
 
         <div class="contact-item">
           <h3>GitHub</h3>
-          <p>
-            <a href="https://github.com/Amanda-AAndrade" target="_blank" rel="noopener">
-              github.com/Amanda-AAndrade
-            </a>
-          </p>
+          <p><a href="https://github.com/Amanda-AAndrade" target="_blank" rel="noopener">github.com/Amanda-AAndrade</a></p>
         </div>
 
         <div class="contact-item">
           <h3>LinkedIn</h3>
-          <p>
-            <a href="#" target="_blank" rel="noopener">linkedin.com/in/seu-link</a>
-          </p>
+          <p><a href="#" target="_blank" rel="noopener">linkedin.com/in/seu-link</a></p>
         </div>
 
         <div class="contact-item">
           <h3>Currículo (PDF)</h3>
-          <p>
-            <a href="AMANDA_ANDRADE_Currículo.pdf" target="_blank" rel="noopener">Baixar</a>
-          </p>
+          <p><a href="assets/files/AMANDA_ANDRADE_Curriculo.pdf" target="_blank" rel="noopener" download>Baixar</a></p>
         </div>
       </div>
-    </section>
 
+      <div class="card contact-form-card">
+        <h3>Me envie uma mensagem</h3>
+        <p>Preencha o formulário abaixo. (Validação em JavaScript)</p>
+
+        <form id="contactForm" class="form" novalidate>
+          <div class="form-row">
+            <label for="name">Nome</label>
+            <input id="name" name="name" type="text" placeholder="Seu nome" />
+            <small class="error" id="errorName"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" />
+            <small class="error" id="errorEmail"></small>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escreva sua mensagem..."></textarea>
+            <small class="error" id="errorMessage"></small>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Enviar</button>
+            <span class="form-status" id="formStatus"></span>
+          </div>
+        </form>
+      </div>
+    </section>
   </main>
 
   <!-- Rodapé -->
@@ -363,7 +367,21 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- Modal de Projetos -->
+  <div id="projectModal" class="modal" aria-hidden="true">
+    <div class="modal-overlay" data-close="true"></div>
 
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close btn" data-close="true" aria-label="Fechar" type="button">✕</button>
+
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+
+      <div id="modalTags" class="tags"></div>
+      <div class="card-links" id="modalLinks"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
